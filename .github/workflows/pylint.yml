@@ -20,4 +20,5 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint STT_1_1/my_code.py
+        pylint my_code.py
+
