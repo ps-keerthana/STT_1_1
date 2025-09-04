@@ -1,6 +1,8 @@
+"""To-Do List program to add, show, and remove tasks."""
 tasks = []
 
 def show_tasks():
+    """Displays all tasks in the list."""
     if not tasks:
         print("No tasks in the list.")
     else:
@@ -9,11 +11,13 @@ def show_tasks():
             print(f"{i}. {task}")
 # Function to add task
 def add_task():
+    """Adds a new task to the list."""
     task = input("Enter a new task: ")
     tasks.append(task)
     print(f"Task '{task}' added.")
 # Function to remove a task
 def remove_task():
+    """Removes a task by its number."""
     show_tasks()
     if tasks:
         try:
@@ -27,6 +31,7 @@ def remove_task():
             print("Please enter a valid number.")
 
 def main():
+    """Runs the main menu loop for the To-Do List."""
     while True:
         print("\n--- To-Do List Menu ---")
         print("1. Show Tasks")
