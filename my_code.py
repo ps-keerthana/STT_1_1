@@ -6,7 +6,7 @@ def show_tasks():
         print("No tasks in the list.")
     else:
         print("Your Tasks:")
-        for i, task in enumerate(tasks, 1):     
+        for i, task in enumerate(tasks, 1):
             print(f"{i}. {task}")
 def add_task():
     """Adds a new task to the list."""
@@ -18,9 +18,9 @@ def remove_task():
     show_tasks()
     if tasks:
         try:
-            num = int(input("Enter task number to remove: "))    
+            num = int(input("Enter task number to remove: ")) 
             if 1 <= num <= len(tasks):
-                removed = tasks.pop(num-1)    
+                removed = tasks.pop(num-1)
                 print(f"Task '{removed}' removed.")
             else:
                 print("Invalid task number.")
@@ -34,7 +34,7 @@ def main():
         print("2. Add Task")
         print("3. Remove Task")
         print("4. Exit")
-        choice = input("Enter your choice: ")    
+        choice = input("Enter your choice: ")
         if choice == "1":
             show_tasks()
         elif choice == "2":
