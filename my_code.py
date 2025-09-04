@@ -7,7 +7,7 @@ def show_tasks():
         print("Your Tasks:")
         for i, task in enumerate(tasks, 1):     # Enumerate to number tasks
             print(f"{i}. {task}")
-
+# Function to add task
 def add_task():
     task = input("Enter a new task: ")
     tasks.append(task)
