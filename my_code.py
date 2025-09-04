@@ -18,7 +18,7 @@ def remove_task():
     show_tasks()
     if tasks:
         try:
-            num = int(input("Enter task number to remove: ")) 
+            num = int(input("Enter task number to remove: "))
             if 1 <= num <= len(tasks):
                 removed = tasks.pop(num-1)
                 print(f"Task '{removed}' removed.")
